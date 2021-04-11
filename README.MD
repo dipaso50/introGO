@@ -1,4 +1,4 @@
-# GOLANG <img src="images/gopher.png"  width="100"/>
+# <img src="images/gopher.png"  width="100"/>
 Go es un lenguaje de programación concurrente y compilado inspirado en la sintaxis de C, que intenta ser dinámico como Python y con el rendimiento de C o C++ desarrollado por Google.
  <br />
  <br />
