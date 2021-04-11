@@ -1,10 +1,8 @@
 # GOLANG <img src="images/gopher.jpeg"  width="100"/>
+Go es un lenguaje de programación concurrente y compilado inspirado en la sintaxis de C, que intenta ser dinámico como Python y con el rendimiento de C o C++ desarrollado por Google.
  <br />
  <br />
- <br />
- <br />
- <br />
- <br />
+ <br /> 
 
 ## Historia
 ---
@@ -23,12 +21,53 @@
 
 ## ¿Quién lo usa y porqué? 
 ---
-* https://github.com/golang/go/wiki/GoUsers
-* https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/
+* [Empresas que usan GO](https://github.com/golang/go/wiki/GoUsers)
+* [Encuesta Jetbrains](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
+* [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
 
+<br />
+ <br />
+
+* Docker
+* Kubernetes
+* Graphana
+* Netflix
+* Dropbox
+* ...
+
+ 
+
+<br />
+Uso por país
+<br />
 <img src="images/usageByProfessional.png"/>
+<br />
+Uso
+<br />
 <img src="images/usageByLanguages.png"  />
+<br />
+Uso por tipo de aplicación
+<br />
 <img src="images/usageByType.png"  />
+<br />
+ 
+Uso
+<br />
+<img src="images/stackUse.png"  title="Uso"/>
+<br />
+Salarios
+<br />
+<img src="images/stackTopSalaries.png" title="Uso" />
+<br />
+Most Loved
+<br />
+<img src="images/stackMostLoved.png" title="Most Loved" />
+
+<br />
+Correlaciones
+<br />
+<img src="images/stackCorrelated.png"  title="Correlations"/>
+
 
  <br />
  <br />
@@ -89,6 +128,8 @@
 * https://es.wikipedia.org/wiki/Ken_Thompson
 
 * https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/generics/
+
+* https://github.com/adonovan/gopl.io/
 
 
  
