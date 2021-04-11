@@ -20,8 +20,10 @@ Go es un lenguaje de programación concurrente y compilado inspirado en la sinta
 
 ## ¿Quién lo usa y porqué? 
 ---
-* [Empresas que usan GO](https://github.com/golang/go/wiki/GoUsers)
-* [Encuesta Jetbrains](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
+* [Empresas que usan Go](https://github.com/golang/go/wiki/GoUsers)
+* [JetBrains The state of Go](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
+* [Jetbrains devecosystem 2020](https://www.jetbrains.com/lp/devecosystem-2020/)
+
 * [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
 
 <br />
@@ -37,9 +39,9 @@ Go es un lenguaje de programación concurrente y compilado inspirado en la sinta
  
  
 <br />
-<img src="images/usageByProfessional.png" width="45%"/>
-<img src="images/usageByLanguages.png" width="50%" />
-<img src="images/usageByType.png"  width="45%"/>
+<img src="images/usageByProfessional.png" width="70%"/>
+<img src="images/usageByLanguages.png" width="70%" />
+<img src="images/usageByType.png"  width="70%"/>
 
 <br /> 
 <br />
@@ -99,12 +101,13 @@ Correlaciones
 * Librería estándar completa
 
 ***Contras***
+* Gestión de dependencias
+* No admite sobrecarga de métodos
 * Carece de genéricos 
 <br /> 
 <img src="images/generics.png" alt="drawing" width="700"/>
 
-* Gestión de dependencias
-* No admite sobrecarga de métodos
+
 
 
 ## Más información
