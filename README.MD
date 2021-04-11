@@ -1,4 +1,4 @@
-# GOLANG <img src="images/gopher.jpeg"  width="100"/>
+# GOLANG <img src="images/gopher.png"  width="100"/>
 Go es un lenguaje de programación concurrente y compilado inspirado en la sintaxis de C, que intenta ser dinámico como Python y con el rendimiento de C o C++ desarrollado por Google.
  <br />
  <br />
@@ -6,8 +6,7 @@ Go es un lenguaje de programación concurrente y compilado inspirado en la sinta
 
 ## Historia
 ---
-<img src="images/gopher.jpeg"  width="300"/>
-<img src="images/gopher.jpeg"  width="300"/>
+
 <br />
 * Creadores Robert Griesemer, Rob Pike y Ken Thompson (UNIX)
 * Su desarrollo empezó en 2007 y la primera versión se liberó en 2009
@@ -26,7 +25,7 @@ Go es un lenguaje de programación concurrente y compilado inspirado en la sinta
 * [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
 
 <br />
- <br />
+ 
 
 * Docker
 * Kubernetes
@@ -36,37 +35,33 @@ Go es un lenguaje de programación concurrente y compilado inspirado en la sinta
 * ...
 
  
+ 
+<br />
+<img src="images/usageByProfessional.png" width="45%"/>
+<img src="images/usageByLanguages.png" width="50%" />
+<img src="images/usageByType.png"  width="45%"/>
 
-<br />
-Uso por país
-<br />
-<img src="images/usageByProfessional.png"/>
-<br />
-Uso
-<br />
-<img src="images/usageByLanguages.png"  />
-<br />
-Uso por tipo de aplicación
-<br />
-<img src="images/usageByType.png"  />
+<br /> 
 <br />
  
 Uso
 <br />
-<img src="images/stackUse.png"  title="Uso"/>
+<img src="images/stackUse.png"  title="Uso" width="70%"/>
+
 <br />
 Salarios
 <br />
-<img src="images/stackTopSalaries.png" title="Uso" />
+<img src="images/stackTopSalaries.png" title="Uso" width="70%"/>
+
 <br />
 Most Loved
 <br />
-<img src="images/stackMostLoved.png" title="Most Loved" />
+<img src="images/stackMostLoved.png" title="Most Loved" width="70%" />
 
 <br />
 Correlaciones
 <br />
-<img src="images/stackCorrelated.png"  title="Correlations"/>
+<img src="images/stackCorrelated.png"  title="Correlations" width="70%"/>
 
 
  <br />
