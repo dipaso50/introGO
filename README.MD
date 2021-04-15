@@ -1,83 +1,21 @@
 # <img src="images/gopher.png"  width="100"/>
-Go es un lenguaje de programación concurrente y compilado inspirado en la sintaxis de C, que intenta ser dinámico como Python y con el rendimiento de C o C++ desarrollado por Google.
- <br />
- <br />
- <br /> 
+[Go o Golang](https://es.wikipedia.org/wiki/Go_(lenguaje_de_programaci%C3%B3n)) es un lenguaje de programación concurrente y compilado inspirado en la sintaxis de C, que intenta ser dinámico como Python y con el rendimiento de C o C++ desarrollado por Google, sus creadores son Robert Griesemer, [Rob Pike](https://es.wikipedia.org/wiki/Rob_Pike) y [Ken Thompson](https://es.wikipedia.org/wiki/Ken_Thompson) (UNIX).
+Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 
-## Historia
----
 
-<br />
-* Creadores Robert Griesemer, Rob Pike y Ken Thompson (UNIX)
-* Su desarrollo empezó en 2007 y la primera versión se liberó en 2009
 
- <br />
- <br />
- <br />
- <br />
- <br />
- <br />
+* [Hello world](https://play.golang.org/p/NHqaVpKdi-f)
 
-## ¿Quién lo usa y porqué? 
----
-* [Empresas que usan Go](https://github.com/golang/go/wiki/GoUsers)
-* [JetBrains The state of Go](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
-* [Jetbrains devecosystem 2020](https://www.jetbrains.com/lp/devecosystem-2020/)
+* [Tour of Go](https://tour.golang.org/list)
 
-* [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
-
-<br />
+* [Effective Go](https://golang.org/doc/effective_go)
  
 
-* Docker
-* Kubernetes
-* Graphana
-* Netflix
-* Dropbox
-* ...
-
- 
- 
-<br />
-<img src="images/usageByProfessional.png" width="70%"/>
-<img src="images/usageByLanguages.png" width="70%" />
-<img src="images/usageByType.png"  width="70%"/>
-
-<br /> 
-<br />
- 
-Uso
-<br />
-<img src="images/stackUse.png"  title="Uso" width="70%"/>
-
-<br />
-Salarios
-<br />
-<img src="images/stackTopSalaries.png" title="Uso" width="70%"/>
-
-<br />
-Most Loved
-<br />
-<img src="images/stackMostLoved.png" title="Most Loved" width="70%" />
-
-<br />
-Correlaciones
-<br />
-<img src="images/stackCorrelated.png"  title="Correlations" width="70%"/>
-
-
- <br />
- <br />
- <br />
- <br />
- <br />
- <br />
- 
 
 ## Características principales
 ---
 * Concurrente
-* Compilado-linkado estático
+* Linkado estático
 * Cross compilation
 * Multiparadigma
 * Tipado estático - tipificación dinámica de datos
@@ -103,10 +41,44 @@ Correlaciones
 ***Contras***
 * Gestión de dependencias
 * No admite sobrecarga de métodos
-* Carece de genéricos 
+* No permite mockear depencias de saque
+* Carece de genéricos  
 <br /> 
 <img src="images/generics.png" alt="drawing" width="700"/>
+ 
 
+## ¿Quién lo usa y porqué? 
+---
+* [Empresas que usan Go](https://github.com/golang/go/wiki/GoUsers)
+* [JetBrains The state of Go](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
+* [Jetbrains devecosystem 2020](https://www.jetbrains.com/lp/devecosystem-2020/)
+
+* [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
+
+<br />
+ 
+
+* Docker
+* Kubernetes
+* Graphana
+* Netflix
+* Dropbox
+* ...
+
+[Some charts](charts/README.MD)
+
+## Sintaxis
+---
+
+* [Sintaxis básica](examples/basics/variables/main.go)
+* [Funciones](examples/basics/functions/main.go)
+* [structs](examples/basics/structs/main.go)
+* [Composición](examples/basics/composition/main.go)
+* [Interfaces](examples/basics/interface/main.go)
+* [Goroutines](examples/basics/goroutines/main.go)
+* [Test](examples/basics/test/README.MD)
+* [WS](examples/ws-sin-framework/main.go)
+* [WS con framework](examples/ws-con-framework/main.go)
 
 
 
@@ -128,6 +100,7 @@ Correlaciones
 * https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/generics/
 
 * https://github.com/adonovan/gopl.io/
+* https://www.alexedwards.net/blog/an-overview-of-go-tooling
 
 
  
