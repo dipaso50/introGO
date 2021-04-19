@@ -2,12 +2,22 @@ package main
 
 import "fmt"
 
+var (
+	m = 3
+)
+
+const (
+	Saludo = "hola"
+)
+
 func main() {
 
 	//declaración de variables
 	//----------------------------------------------------------------------------------------
 	var a = "initial"
 	fmt.Println(a)
+
+	fmt.Sprint()
 
 	var b, c int = 1, 2
 	fmt.Println(b, c)
@@ -29,7 +39,7 @@ func main() {
 
 	//arrays
 	//----------------------------------------------------------------------------------------
-	var arr [4]int //Slice sin tamaño definido
+	var arr [4]int
 	arr[0] = 33
 	fmt.Printf("arr --> len(%d) cap(%d)\n", len(arr), cap(arr))
 

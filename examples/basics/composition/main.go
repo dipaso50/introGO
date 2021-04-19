@@ -6,6 +6,11 @@ type Animal struct {
 	Name string
 	Age  int
 }
+
+func (a Animal) Move() {
+	fmt.Printf("%s is Walking\n", a.Name)
+}
+
 type Cat struct {
 	Animal
 }
@@ -20,10 +25,6 @@ type Fish struct {
 
 func (a Fish) Move() {
 	fmt.Printf("%s is swimming\n", a.Name)
-}
-
-func (a Animal) Move() {
-	fmt.Printf("%s is Walking\n", a.Name)
 }
 
 func main() {

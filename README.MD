@@ -9,7 +9,8 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 * [Tour of Go](https://tour.golang.org/list)
 
 * [Effective Go](https://golang.org/doc/effective_go)
- 
+
+* [Awesome Go](https://github.com/avelino/awesome-go)
 
 
 ## Características principales
@@ -18,7 +19,7 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 * Linkado estático
 * Cross compilation
 * Multiparadigma
-* Tipado estático - tipificación dinámica de datos
+* Tipado estático - tipificación dinámica de datos en tiempo de ejecución
 * Garbage collector(latency-free)
 * Eficiente  
 * High speed compilation
@@ -38,11 +39,13 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 * Fácil de usar y entender
 * Librería estándar completa
 
+
 ***Contras***
 * Gestión de dependencias
 * No admite sobrecarga de métodos
 * No permite mockear depencias de saque
 * Carece de genéricos  
+
 <br /> 
 <img src="images/generics.png" alt="drawing" width="700"/>
  
@@ -72,20 +75,20 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 
 * [Sintaxis básica](examples/basics/variables/main.go)
 * [Funciones](examples/basics/functions/main.go)
-* [structs](examples/basics/structs/main.go)
+* [Structs](examples/basics/structs/main.go)
 * [Composición](examples/basics/composition/main.go)
 * [Interfaces](examples/basics/interface/main.go)
 * [Goroutines](examples/basics/goroutines/main.go)
 * [Test](examples/basics/test/README.MD)
-* [WS](examples/ws-sin-framework/main.go)
-* [WS con framework](examples/ws-con-framework/main.go)
+* [Server](examples/ws-sin-framework/main.go)
+* [Server con framework](examples/ws-con-framework/main.go)
 
 
 
 ## Más información
 ---
 * https://github.com/golang/go/wiki
-* https://awesome-go.com/
+* https://github.com/avelino/awesome-go
 
 
 

@@ -1,34 +1,37 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
-func concatParams(param1, param2 string, param3 int) (string, error) {
-	if len(param1) == 0 || len(param2) == 0 {
-		return "", fmt.Errorf("Invalid parameters")
+var separator = "-"
+
+func concat(values ...interface{}) (string, error) {
+	strs := make([]string, len(values))
+	for i, v := range values {
+		fmt.Println(v)
+		if val, ok := v.(string); ok && len(val) == 0 {
+			return "", fmt.Errorf("Invalid parameter %v", val)
+		}
+		strs[i] = fmt.Sprintf("%v", v)
 	}
-
-	return fmt.Sprint(param1, "-", param2, "-", param3), nil
+	return strings.Join(strs, separator), nil
 }
 
-func concatParamsNamed(param1, param2 string, param3 int) (res string, err error) {
-	if len(param1) == 0 || len(param2) == 0 {
-		return "", fmt.Errorf("Invalid parameters")
-	}
+func concatString(params ...string) (string, error) {
+	return concat(params[0:])
+}
 
-	res = fmt.Sprint(param1, "-", param2, "-", param3)
+func concatInt(params ...int) (res string) {
+	res, _ = concat(params[0:])
 	return
 }
 
 func main() {
-	val, err := concatParams("hola", "", 1)
+	val := concatInt(3, 5, 7)
 
-	if err != nil {
-		fmt.Printf("%v\n", err)
-	} else {
-		fmt.Println(val)
-	}
-
-	val, err = concatParamsNamed("hola", "mundo", 2)
+	val, err := concatString("hola", "adios")
 
 	if err != nil {
 		fmt.Printf("%v\n", err)
