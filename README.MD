@@ -8,9 +8,7 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 
 * [Tour of Go](https://tour.golang.org/list)
 
-* [Effective Go](https://golang.org/doc/effective_go)
-
-* [Awesome Go](https://github.com/avelino/awesome-go)
+* [Effective Go](https://golang.org/doc/effective_go) 
 
 
 ## Características principales
@@ -29,7 +27,6 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 * Implementación de interfaces implícita 
 
  
-
 ## PROS - CONTRAS
 ---
 ***Pros***
@@ -44,23 +41,12 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 * Gestión de dependencias
 * No admite sobrecarga de métodos
 * No permite mockear depencias de saque
-* Carece de genéricos  
-
-<br /> 
-<img src="images/generics.png" alt="drawing" width="700"/>
+* Carece de [genéricos](images/generics.png)
  
 
-## ¿Quién lo usa y porqué? 
+## ¿Quién lo usa?
 ---
 * [Empresas que usan Go](https://github.com/golang/go/wiki/GoUsers)
-* [JetBrains The state of Go](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
-* [Jetbrains devecosystem 2020](https://www.jetbrains.com/lp/devecosystem-2020/)
-
-* [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
-
-<br />
- 
-
 * Docker
 * Kubernetes
 * Graphana
@@ -68,8 +54,16 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 * Dropbox
 * ...
 
-[Some charts](charts/README.MD)
+## Encuestas
+---
 
+* [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
+* [Encuesta Jetbrains devecosystem 2020](https://www.jetbrains.com/lp/devecosystem-2020/)
+* [JetBrains The state of Go](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
+
+
+<br />
+ 
 ## Sintaxis
 ---
 
@@ -85,16 +79,17 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 
 
 
-## Más información
+## Ejemplos
 ---
-* https://github.com/golang/go/wiki
-* https://github.com/avelino/awesome-go
+* [Organizador de ficheros](https://github.com/dipaso50/toc)
+* [Web Services Rest JWT](https://github.com/dipaso50/ws-jwt-go)
+* [Más ejemplos, herramientas y librerías](https://github.com/avelino/awesome-go)
 
 
 
 ## Enlaces de interés
 ---
-
+* https://github.com/golang/go/wiki 
 * https://play.golang.org/
 * https://en.wikipedia.org/wiki/Robert_Griesemer
 * https://es.wikipedia.org/wiki/Rob_Pike
