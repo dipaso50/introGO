@@ -3,7 +3,6 @@
 Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 
 
-
 * [Hello world](https://play.golang.org/p/NHqaVpKdi-f)
 
 * [Tour of Go](https://tour.golang.org/list)
@@ -99,6 +98,9 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 
 * https://github.com/adonovan/gopl.io/
 * https://www.alexedwards.net/blog/an-overview-of-go-tooling
+* https://docs.microsoft.com/es-es/azure/developer/go/
+* https://github.com/azure-samples/azure-sdk-for-go-samples
+
 
 
  
