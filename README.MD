@@ -9,6 +9,22 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 
 * [Effective Go](https://golang.org/doc/effective_go) 
 
+## ¿Quién lo usa?
+---
+* [Empresas que usan Go](https://github.com/golang/go/wiki/GoUsers)
+* Docker
+* Kubernetes
+* Graphana
+* Netflix
+* Dropbox
+* ...
+
+## Encuestas
+---
+
+* [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
+* [Encuesta Jetbrains devecosystem 2020](https://www.jetbrains.com/lp/devecosystem-2020/)
+* [JetBrains The state of Go](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
 
 ## Características principales
 ---
@@ -42,24 +58,6 @@ Su desarrollo empezó en 2007 y la primera versión se liberó en 2009.
 * No permite mockear depencias de saque
 * Carece de [genéricos](images/generics.png)
  
-
-## ¿Quién lo usa?
----
-* [Empresas que usan Go](https://github.com/golang/go/wiki/GoUsers)
-* Docker
-* Kubernetes
-* Graphana
-* Netflix
-* Dropbox
-* ...
-
-## Encuestas
----
-
-* [Encuesta StackOverflow](https://insights.stackoverflow.com/survey/2020)
-* [Encuesta Jetbrains devecosystem 2020](https://www.jetbrains.com/lp/devecosystem-2020/)
-* [JetBrains The state of Go](https://blog.jetbrains.com/go/2021/02/03/the-state-of-go/)
-
 
 <br />
  
