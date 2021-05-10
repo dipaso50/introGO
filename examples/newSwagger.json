@@ -1,0 +1,353 @@
+{  
+  "swagger": "2.0",
+  "info": {
+    "title": "SAPConnectWebApi",
+    "version": "v2"
+  },
+  "host": "ees-d-k2-app.azurewebsites.net",
+  "basePath": "",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/provisiones/Contabilizar/{provisionID}": {
+      "get": {
+        "tags": [
+          "Contabilizar"
+        ],
+        "parameters": [
+          {
+            "name": "provisionID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseContabilizacion"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseContabilizacion"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseContabilizacion"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/facturas/Contabilizar/{facturaID}": {
+      "get": {
+        "tags": [
+          "Contabilizar"
+        ],
+        "parameters": [
+          {
+            "name": "facturaID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseContabilization"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseContabilization"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseContabilization"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/controlDuplicadosFacturas/Duplicados/warning": {
+      "post": {
+        "tags": [
+          "Duplicados"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControlDuplicadosRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControlDuplicadosRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControlDuplicadosRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControlDuplicadosResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControlDuplicadosResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControlDuplicadosResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/controlDuplicadosFacturas/Duplicados/duplicados": {
+      "post": {
+        "tags": [
+          "Duplicados"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControlDuplicadosRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControlDuplicadosRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControlDuplicadosRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControlDuplicadosResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControlDuplicadosResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ControlDuplicadosResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/provisiones/HealthCheck": {
+      "get": {
+        "tags": [
+          "HealthCheck"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericRestResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericRestResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericRestResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/facturas/HealthCheck": {
+      "get": {
+        "tags": [
+          "HealthCheck"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericRestResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericRestResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenericRestResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ControlDuplicadosRequest": {
+        "type": "object",
+        "properties": {
+          "importetotalNoTaxes": {
+            "type": "number",
+            "format": "double"
+          },
+          "importeTotal": {
+            "type": "number",
+            "format": "double"
+          },
+          "numeroFactura": {
+            "type": "string",
+            "nullable": true
+          },
+          "nifProveedor": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaFactura": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "folio": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ControlDuplicadosResponse": {
+        "type": "object",
+        "properties": {
+          "existeDuplicado": {
+            "type": "boolean"
+          },
+          "msgFoliosDuplicados": {
+            "type": "string",
+            "nullable": true
+          },
+          "msgFoliosDuplicadosNoFormat": {
+            "type": "string",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GenericRestResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "boolean"
+          },
+          "errorMsg": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseContabilizacion": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean"
+          },
+          "idsap": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseContabilization": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean"
+          },
+          "idsap": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false 
+      }
+    }
+  }
+}
