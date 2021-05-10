@@ -1,0 +1,267 @@
+{
+  "swagger": "2.0",  
+  "info": {
+    "title": "SAPConnectWebApi",
+    "version": "v1"
+  },
+  "host": "ees-d-k2-app.azurewebsites.net",
+  "basePath": "",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/provisiones/Contabilizar/{provisionID}": {
+      "get": {
+        "tags": [
+          "Contabilizar"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "provisionID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ResponseContabilizacion"
+            }
+          }
+        }
+      }
+    },
+    "/facturas/Contabilizar/{facturaID}": {
+      "get": {
+        "tags": [
+          "Contabilizar"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "facturaID",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ResponseContabilization"
+            }
+          }
+        }
+      }
+    },
+    "/controlDuplicadosFacturas/Duplicados/warning": {
+      "post": {
+        "tags": [
+          "Duplicados"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ControlDuplicadosRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ControlDuplicadosResponse"
+            }
+          }
+        }
+      }
+    },
+    "/controlDuplicadosFacturas/Duplicados/duplicados": {
+      "post": {
+        "tags": [
+          "Duplicados"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ControlDuplicadosRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ControlDuplicadosResponse"
+            }
+          }
+        }
+      }
+    },
+    "/provisiones/HealthCheck": {
+      "get": {
+        "tags": [
+          "HealthCheck"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRestResponse"
+            }
+          }
+        }
+      }
+    },
+    "/facturas/HealthCheck": {
+      "get": {
+        "tags": [
+          "HealthCheck"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRestResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ControlDuplicadosRequest": {
+      "type": "object",
+      "properties": {
+        "importetotalNoTaxes": {
+          "format": "double",
+          "type": "number"
+        },
+        "importeTotal": {
+          "format": "double",
+          "type": "number"
+        },
+        "numeroFactura": {
+          "type": "string"
+        },
+        "nifProveedor": {
+          "type": "string"
+        },
+        "fechaFactura": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "folio": {
+          "type": "string"
+        }
+      }
+    },
+    "ControlDuplicadosResponse": {
+      "type": "object",
+      "properties": {
+        "existeDuplicado": {
+          "type": "boolean"
+        },
+        "msgFoliosDuplicados": {
+          "type": "string"
+        },
+        "msgFoliosDuplicadosNoFormat": {
+          "type": "string"
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        }
+      }
+    },
+    "GenericRestResponse": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "boolean"
+        },
+        "errorMsg": {
+          "type": "string"
+        }
+      }
+    },
+    "ResponseContabilizacion": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "idsap": {
+          "type": "string"
+        }
+      }
+    },
+    "ResponseContabilization": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "success": {
+          "type": "boolean"
+        },
+        "idsap": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
