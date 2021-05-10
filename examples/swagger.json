@@ -4,6 +4,11 @@
     "title": "SAPConnectWebApi",
     "version": "v2"
   },
+  "host": "https://ees-d-k2-app.azurewebsites.net",
+  "basePath": "",
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/provisiones/Contabilizar/{provisionID}": {
       "get": {
