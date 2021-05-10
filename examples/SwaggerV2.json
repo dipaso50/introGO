@@ -4,7 +4,7 @@
     "title": "SAPConnectWebApi",
     "version": "v1"
   },
-   "host": "https://ees-d-k2-app.azurewebsites.net",
+   "host": "ees-d-k2-app.azurewebsites.net",
   "basePath": "",
   "schemes": [
     "https"
