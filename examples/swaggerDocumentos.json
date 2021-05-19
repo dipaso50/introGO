@@ -1,0 +1,690 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "SHPConnectWebApi",
+    "version": "v1"
+  },
+  "host": "ees-d-k2-app.azurewebsites.net",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/sharepoint/AdjuntosFactura/GetDocuments": {
+      "post": {
+        "tags": [
+          "AdjuntosFactura"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/GetDocumentsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Document"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosFactura/MoveDocumentSetByName": {
+      "post": {
+        "tags": [
+          "AdjuntosFactura"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/MoveDocumentSetRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRespFacturas"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosFactura/ValidaDocumentosObligatoriosCompliance": {
+      "post": {
+        "tags": [
+          "AdjuntosFactura"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ValidateDocumentsComplianceRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ValidateResponse"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosFactura/UploadDocument": {
+      "post": {
+        "tags": [
+          "AdjuntosFactura"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UploadDocumentFacturaRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRespFacturas"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosFactura/DeleteDocument": {
+      "post": {
+        "tags": [
+          "AdjuntosFactura"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/DeleteDocumentFacturaRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRespFacturas"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosFactura/GetFileContent": {
+      "post": {
+        "tags": [
+          "AdjuntosFactura"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/GetFileContentFacturaRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/Document"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosProvisiones/GetFileContentProvision": {
+      "post": {
+        "tags": [
+          "AdjuntosProvisiones"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/GetFileContentProvisionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/DocumentoProvision"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosProvisiones/DeleteDocumentProvision": {
+      "post": {
+        "tags": [
+          "AdjuntosProvisiones"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/DeleteDocumentProvisionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRespProvisiones"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosProvisiones/GetDocumentsProvision": {
+      "post": {
+        "tags": [
+          "AdjuntosProvisiones"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/GetDocumentsProvisionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DocumentoProvision"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosProvisiones/UploadDocumentProvision": {
+      "post": {
+        "tags": [
+          "AdjuntosProvisiones"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UploadDocumentProvisionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRespProvisiones"
+            }
+          }
+        }
+      }
+    },
+    "/sharepoint/AdjuntosProvisiones/DuplicateParentDocuments": {
+      "post": {
+        "tags": [
+          "AdjuntosProvisiones"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/DuplicateParentRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/GenericRespProvisiones"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "GetDocumentsRequest": {
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "documentSetName": {
+          "type": "string"
+        }
+      }
+    },
+    "Document": {
+      "type": "object",
+      "properties": {
+        "linkFilename": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "b2bCreatorName": {
+          "type": "string"
+        },
+        "b2bDocumentType": {
+          "type": "string"
+        },
+        "b2bLastModifier": {
+          "type": "string"
+        },
+        "folder": {
+          "type": "string"
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "modificado": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "fileLeafRef": {
+          "type": "string"
+        },
+        "fileBytesContent": {
+          "format": "byte",
+          "type": "string"
+        }
+      }
+    },
+    "MoveDocumentSetRequest": {
+      "type": "object",
+      "properties": {
+        "documentSetName": {
+          "type": "string"
+        },
+        "listOriginName": {
+          "type": "string"
+        },
+        "listDestinationName": {
+          "type": "string"
+        }
+      }
+    },
+    "GenericRespFacturas": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean"
+        },
+        "errorMsg": {
+          "type": "string"
+        }
+      }
+    },
+    "ValidateDocumentsComplianceRequest": {
+      "type": "object",
+      "properties": {
+        "documentSetName": {
+          "type": "string"
+        },
+        "listOriginName": {
+          "type": "string"
+        }
+      }
+    },
+    "ValidateResponse": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean"
+        },
+        "errorMsg": {
+          "type": "string"
+        },
+        "valid": {
+          "type": "boolean"
+        }
+      }
+    },
+    "UploadDocumentFacturaRequest": {
+      "required": [
+        "listOriginName"
+      ],
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "folder": {
+          "type": "string"
+        },
+        "fileLeafRef": {
+          "type": "string"
+        },
+        "b2bDocumentType": {
+          "type": "string"
+        },
+        "b2bLastModifier": {
+          "type": "string"
+        }
+      }
+    },
+    "DeleteDocumentFacturaRequest": {
+      "required": [
+        "documentID",
+        "folder",
+        "listOriginName"
+      ],
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "folder": {
+          "type": "string"
+        },
+        "documentID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "GetFileContentFacturaRequest": {
+      "required": [
+        "documentID",
+        "folder",
+        "listOriginName"
+      ],
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "folder": {
+          "type": "string"
+        },
+        "documentID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "GetFileContentProvisionRequest": {
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "folio": {
+          "type": "string"
+        },
+        "documentID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "DocumentoProvision": {
+      "type": "object",
+      "properties": {
+        "linkFilename": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "b2bCreatorName": {
+          "type": "string"
+        },
+        "b2bDocumentType": {
+          "type": "string"
+        },
+        "b2bLastModifier": {
+          "type": "string"
+        },
+        "folder": {
+          "type": "string"
+        },
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "modificado": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "fileLeafRef": {
+          "type": "string"
+        },
+        "fileBytesContent": {
+          "format": "byte",
+          "type": "string"
+        },
+        "nombreOriginal": {
+          "type": "string"
+        }
+      }
+    },
+    "DeleteDocumentProvisionRequest": {
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "folio": {
+          "type": "string"
+        },
+        "folioOriginal": {
+          "type": "string"
+        },
+        "documentID": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "GenericRespProvisiones": {
+      "type": "object",
+      "properties": {
+        "success": {
+          "type": "boolean"
+        },
+        "errorMsg": {
+          "type": "string"
+        }
+      }
+    },
+    "GetDocumentsProvisionRequest": {
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "folio": {
+          "type": "string"
+        },
+        "folioOriginal": {
+          "type": "string"
+        }
+      }
+    },
+    "UploadDocumentProvisionRequest": {
+      "type": "object",
+      "properties": {
+        "listOriginName": {
+          "type": "string"
+        },
+        "folio": {
+          "type": "string"
+        },
+        "folioOriginal": {
+          "type": "string"
+        },
+        "tipoDocumento": {
+          "type": "string"
+        },
+        "usuario": {
+          "type": "string"
+        },
+        "fileLeafRef": {
+          "type": "string"
+        }
+      }
+    },
+    "DuplicateParentRequest": {
+      "type": "object",
+      "properties": {
+        "folio": {
+          "type": "string"
+        },
+        "folioPadre": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
